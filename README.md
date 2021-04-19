@@ -1,7 +1,41 @@
 # nest-js-mis-notas
 todo lo referente a nest js
 
+#### Para obtener ayuda 
+```
+nest --help
+```
 
+<br/>
+
+#### Arrancar proyecto en modo de auto reinicio con algun cambio efectuado
+```
+nest start --watch
+```
+
+<br/>
+
+#### Generar un Controlador
+```
+nest g controller nombre_del_servicio
+```
+
+<br/>
+
+
+#### Generar un modulo
+```
+nest g mo technicians nombre_del_modulo
+```
+
+<br/>
+
+#### Generar un servicio
+```
+nest g service nombre_del_servicio
+```
+
+<br/>
 
 #### Generar proyecto para Produccion
 ```
