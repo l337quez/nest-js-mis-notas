@@ -1,4 +1,6 @@
 # nest-js-mis-notas
+Documentacion Oficial https://docs.nestjs.com/
+
 todo lo referente a nest js, cada vez que se cree un controlador, lo va crear dentro de la carpeta src, sino le indicas otro directorio. 
 
 #### Para obtener ayuda 
@@ -56,4 +58,3 @@ npm run build
 
 </br>
 
-https://docs.nestjs.com/
