@@ -15,6 +15,16 @@ nest start --watch
 
 <br/>
 
+
+#### Estructura de carpetas
+Esta es la estructura basica, que uso para un controlador
+
+<p align="center"><img src="https://raw.githubusercontent.com/l337quez/GNU-Pytronic/master/other%20Sources/versiones/V%201.1.png"></p>  
+
+<br/>
+
+
+
 #### Generar un Controlador
 ```
 nest g controller nombre_del_servicio
