@@ -6,7 +6,7 @@ todo lo referente a nest js, cada vez que se cree un controlador, lo va crear de
 
 ## Índice de contenidos
 * [Obtener ayuda de Nest](#item1)
-* [Contenido 2](#item2)
+* [Arrancar proyecto en modo de auto reinicio con algun cambio efectuado](#item2)
 * [Contenido 3](#item3)
 * [Contenido 4](#item4)
 
@@ -21,6 +21,7 @@ nest --help
 
 <br/>
 
+<a name="item1"></a>
 #### Arrancar proyecto en modo de auto reinicio con algun cambio efectuado
 ```
 nest start --watch
