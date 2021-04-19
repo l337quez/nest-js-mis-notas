@@ -19,7 +19,7 @@ nest start --watch
 #### Estructura de carpetas
 Esta es la estructura basica, que uso para un controlador
 
-<p align="center"><img src="https://raw.githubusercontent.com/l337quez/GNU-Pytronic/master/other%20Sources/versiones/V%201.1.png"></p>  
+<p align="center"><img src="https://github.com/l337quez/nest-js-mis-notas/blob/main/images/estructura_basica.png"></p>  
 
 <br/>
 
