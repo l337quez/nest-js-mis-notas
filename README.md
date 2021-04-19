@@ -21,7 +21,7 @@ nest --help
 
 <br/>
 
-<a name="item1"></a>
+<a name="item2"></a>
 #### Arrancar proyecto en modo de auto reinicio con algun cambio efectuado
 ```
 nest start --watch
