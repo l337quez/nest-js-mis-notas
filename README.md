@@ -89,9 +89,10 @@ plugin. Dentro de los coorchetes escribimos la query del GET.  No es necesario e
 
 <br/>
 
-Si deseamos editar las propiedades del paginate y si no debemos buscar por ningun campo entonces dejamos los primeros {} como vacio
+Si deseamos editar las propiedades del paginate y si no debemos buscar por ningun campo entonces dejamos los primeros {} como vacio. En los siguientes coorchetes 
+pondremos las opciones que deseamos editar.
 ```
-const products = await Product.paginate({},)
+const products = await Product.paginate({},{limit:7})
 ```
 
 https://www.npmjs.com/package/mongoose-paginate-v2
