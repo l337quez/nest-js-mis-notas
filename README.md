@@ -77,6 +77,7 @@ Se debe agregar en el esquema
 const mongoosePaginate = require('mongoose-paginate-v2');
 SubjectSchema.plugin(mongoosePaginate);
 ```
+
 <br/>
 
 El paginate se usa para hacer un get, si por ejemplo queremos implementar el paginado a una tienda de productos
@@ -85,6 +86,13 @@ const products = await Product.paginate({name:laptop})
 ```
 Lo que hicimos en la linea anterior es usar la funcion asincrona wait para hacer un get de productos, Product es el eschema del controlador y paginate llamar al
 plugin. Dentro de los coorchetes escribimos la query del GET.  No es necesario escribir GET, ya que eso lo hace la funcion paginate
+
+<br/>
+
+Si deseamos editar las propiedades del paginate y si no debemos buscar por ningun campo entonces dejamos los primeros {} como vacio
+```
+const products = await Product.paginate({},)
+```
 
 https://www.npmjs.com/package/mongoose-paginate-v2
 
