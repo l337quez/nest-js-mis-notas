@@ -1,15 +1,15 @@
-# nest-js-mis-notas
+### nest-js-mis-notas
 Documentacion Oficial https://docs.nestjs.com/
 
 todo lo referente a nest js, cada vez que se cree un controlador, lo va crear dentro de la carpeta src, sino le indicas otro directorio. 
 
 
-## Índice de contenidos
+### Índice de contenidos
 * [Obtener ayuda de Nest](#item1)
 * [Arrancar proyecto en modo de auto reinicio con algun cambio efectuado](#item2)
 * [Contenido 3](#item3)
 * [Contenido 4](#item4)
-
+* [Mongoose paginate V2](#item5)
 
  <br/>
  
@@ -68,5 +68,23 @@ npm run build
 
 <br/>
 
-</br>
+ 
+<a name="item5"></a>
+### Mongoose paginate V2
+Este plugin por defecto devuelve 10 datos
+Se debe agregar en el esquema
+```
+const mongoosePaginate = require('mongoose-paginate-v2');
+SubjectSchema.plugin(mongoosePaginate);
+```
+<br/>
+
+El paginate se usa para hacer un get, si por ejemplo queremos implementar el paginado a una tienda de productos
+```
+const products = await Product.paginate({name:laptop})
+```
+Lo que hicimos en la linea anterior es usar la funcion asincrona wait para hacer un get de productos, Product es el eschema del controlador y paginate llamar al
+plugin. Dentro de los coorchetes escribimos la query del GET.  No es necesario escribir GET, ya que eso lo hace la funcion paginate
+
+https://www.npmjs.com/package/mongoose-paginate-v2
 
