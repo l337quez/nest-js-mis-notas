@@ -6,6 +6,7 @@ todo lo referente a nest js, cada vez que se cree un controlador, lo va crear de
 
 ### Índice de contenidos
 * [Obtener ayuda de Nest](#item1)
+* [Crear un Nuevo Proyecto](#item1.1)
 * [Arrancar proyecto en modo de auto reinicio con algun cambio efectuado](#item2)
 * [Generar un Controlador](#item3)
 * [Generar un modulo](#item4)
@@ -18,6 +19,15 @@ todo lo referente a nest js, cada vez que se cree un controlador, lo va crear de
 #### Obtener ayuda de Nest
 ```
 nest --help
+```
+
+<br/>
+
+<a name="item1.1"></a>
+#### Crear un Nuevo Proyecto
+Podremos escoger el manejador de paquetes de nuestro proyecto, puede ser Yarm o Npm.
+```
+nest new nombre_del_proyecto
 ```
 
 <br/>
