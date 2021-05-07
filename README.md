@@ -7,9 +7,10 @@ todo lo referente a nest js, cada vez que se cree un controlador, lo va crear de
 ### Índice de contenidos
 * [Obtener ayuda de Nest](#item1)
 * [Arrancar proyecto en modo de auto reinicio con algun cambio efectuado](#item2)
-* [Contenido 3](#item3)
-* [Contenido 4](#item4)
-* [Mongoose paginate V2](#item5)
+* [Generar un Controlador](#item3)
+* [Generar un modulo](#item4)
+* [Generar un servicio](#item5)
+* [Mongoose paginate V2](#Mongoose_paginate)
 
  <br/>
  
@@ -38,7 +39,7 @@ Esta es la estructura basica, que uso para un controlador
 <br/>
 
 
-
+<a name="item3"></a>
 #### Generar un Controlador
 ```
 nest g controller nombre_del_servicio
@@ -46,7 +47,7 @@ nest g controller nombre_del_servicio
 
 <br/>
 
-
+<a name="item4"></a>
 #### Generar un modulo
 ```
 nest g mo technicians nombre_del_modulo
@@ -54,6 +55,7 @@ nest g mo technicians nombre_del_modulo
 
 <br/>
 
+<a name="item5"></a>
 #### Generar un servicio
 ```
 nest g service nombre_del_servicio
@@ -69,7 +71,7 @@ npm run build
 <br/>
 
  
-<a name="item5"></a>
+<a name="Mongoose_paginate"></a>
 ### Mongoose paginate V2
 Este plugin por defecto devuelve 10 datos
 Se debe agregar en el esquema
