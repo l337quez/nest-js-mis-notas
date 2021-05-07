@@ -1,10 +1,11 @@
 ### nest-js-mis-notas
 Documentacion Oficial https://docs.nestjs.com/
 
+<p align="center"><img src="https://github.com/l337quez/nest-js-mis-notas/blob/main/images/nest-js.png"></p>  
 todo lo referente a nest js, cada vez que se cree un controlador, lo va crear dentro de la carpeta src, sino le indicas otro directorio. 
 
 
-### Índice de contenidos
+### Índice 
 * [Obtener ayuda de Nest](#item1)
 * [Crear un Nuevo Proyecto](#item1.1)
 * [Arrancar proyecto en modo de auto reinicio con algun cambio efectuado](#item2)
