@@ -15,6 +15,11 @@ Documentacion Oficial https://docs.nestjs.com/
 * [Generar un Controlador](#item3)
 * [Generar un modulo](#item4)
 * [Generar un servicio](#item5)
+* [Interfaces](#item6)
+* [Schemas](#item7)
+* [Data Object Transfer (DTO)](#item8)
+* [Decoradores](#Decoradores)
+* [Decoradores para Validaciones](#DecoradoresValidation)
 * [Mongoose paginate V2](#Mongoose_paginate)
 
  <br/>
@@ -82,6 +87,22 @@ nest g service nombre_del_servicio --no-spec
 
 <br/>
 
+
+<br/>
+
+<a name="item6"></a>
+#### Interfaces
+Una Interface es un medio común para que los objetos no relacionados se comuniquen entre sí. 
+```
+nest g service nombre_del_servicio
+```
+Si deseamos crear un servicio y evitar que genere el archivo de pruebas, entonces debemos typear este comando y no el anterior.
+```
+nest g service nombre_del_servicio --no-spec
+```
+
+<br/>
+
 #### Generar proyecto para Produccion
 ```
 npm run build
@@ -89,6 +110,26 @@ npm run build
 
 <br/>
 
+ 
+ <br/>
+
+<a name="Decoradores"></a>
+#### Decoradores
+```
+npm run build
+```
+
+<br/>
+
+<a name="DecoradoresValidation"></a>
+#### Decoradores para Validaciones
+Este tipo de decoradores los podremos usar en los DTO para validar los campos.
+
+<br/>
+
+**@IsNotEmpty()**
+
+<br/>
  
 <a name="Mongoose_paginate"></a>
 ### Mongoose paginate V2
