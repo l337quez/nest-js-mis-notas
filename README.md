@@ -87,13 +87,25 @@ nest g service nombre_del_servicio --no-spec
 
 <br/>
 
-
 <br/>
 
 <a name="item6"></a>
 #### Interfaces
-Una Interface es un medio común para que los objetos no relacionados se comuniquen entre sí. 
+Una Interface es un medio común para que los objetos no relacionados se comuniquen entre sí. Aqui unejemplo: 
 
+```js
+export interface Task {
+ id: string;
+ title: string;
+ description: TaskStatus;
+}
+
+export enum TaskStatus{
+OPEN = "OPEN",
+IN_PROGRESS = "IN_PROGRESS"
+DONE = "DONE"
+}
+``` 
 
 <br/>
 
@@ -138,7 +150,7 @@ Decorador para validar un minimo de caracteres, por ejemplo en este caso se limi
 <br/> 
  
 <a name="Mongoose_paginate"></a>
-### Mongoose paginate V2
+#### Mongoose paginate V2
 Este plugin por defecto devuelve 10 datos
 Se debe agregar en el esquema
 ```
