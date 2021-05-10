@@ -93,13 +93,7 @@ nest g service nombre_del_servicio --no-spec
 <a name="item6"></a>
 #### Interfaces
 Una Interface es un medio común para que los objetos no relacionados se comuniquen entre sí. 
-```
-nest g service nombre_del_servicio
-```
-Si deseamos crear un servicio y evitar que genere el archivo de pruebas, entonces debemos typear este comando y no el anterior.
-```
-nest g service nombre_del_servicio --no-spec
-```
+
 
 <br/>
 
