@@ -19,7 +19,7 @@ Documentacion Oficial https://docs.nestjs.com/
 * [Schemas](#item7)
 * [Data Object Transfer (DTO)](#item8)
 * [Decoradores](#Decoradores)
-* [Decoradores para Validaciones](#DecoradoresValidation)
+* * [Decoradores para Validaciones](#DecoradoresValidation)
 * [Mongoose paginate V2](#Mongoose_paginate)
 
  <br/>
@@ -127,9 +127,23 @@ Este tipo de decoradores los podremos usar en los DTO para validar los campos.
 
 <br/>
 
-**@IsNotEmpty()**
+**@IsNotEmpty()** 
+&nbsp;
+Este decorador es para validar que el campo no puede estar en blanco, es decir no puede ser nulo.
 
 <br/>
+
+**@IsEmail()** 
+&nbsp;
+Decorador para validar que el campo es de tipo email.
+
+<br/>
+
+**@MinLength(6)**
+&nbsp;
+Decorador para validar un minimo de caracteres, por ejemplo en este caso se limitara por 6 caracteres.
+
+<br/> 
  
 <a name="Mongoose_paginate"></a>
 ### Mongoose paginate V2
