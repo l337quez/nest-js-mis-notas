@@ -21,9 +21,10 @@ Documentacion Oficial https://docs.nestjs.com/
 * [Decoradores](#Decoradores)
 * * [Decoradores para Validaciones](#DecoradoresValidation)
 * [Mongoose paginate V2](#Mongoose_paginate)
+* [librerias para Nest](#Libraries)
 
  <br/>
- 
+
 <a name="item1"></a>
 #### Obtener ayuda de Nest
 ```
@@ -177,3 +178,11 @@ const products = await Product.paginate({},{limit:7})
 
 https://www.npmjs.com/package/mongoose-paginate-v2
 
+ 
+ <br/>
+ 
+ <a name="Libraries"></a>
+ #### Librerias para Nest JS
+ hay ciertas librerias que se acoplan perfectamente a Nest, dejare aqui un lista
+ 
+ * Libreria papaparse : ideal para parsear archivos csv a json --> https://www.npmjs.com/package/nest-papaparse
