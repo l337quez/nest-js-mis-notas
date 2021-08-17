@@ -21,6 +21,7 @@ Documentacion Oficial https://docs.nestjs.com/
 * [Decoradores](#Decoradores)
 * * [Decoradores para Validaciones](#DecoradoresValidation)
 * [Mongoose paginate V2](#Mongoose_paginate)
+* [Trabajando con Redis](#redis)
 * [librerias para Nest](#Libraries)
 
  <br/>
@@ -177,6 +178,20 @@ const products = await Product.paginate({},{limit:7})
 ```
 
 https://www.npmjs.com/package/mongoose-paginate-v2
+
+ 
+  <br/>
+ 
+ <a name="redis"></a>
+ #### Instalacion de Redis
+```
+npm i --save redis
+```
+
+```
+npm i cache-manager cache-manager-redis-store --save
+```
+
 
  
  <br/>
