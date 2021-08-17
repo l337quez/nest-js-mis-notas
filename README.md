@@ -1,6 +1,7 @@
 ### Mis Apuntes de Nest JS
 By: Ronal Forero
 
+
 <p align="center"><img src="https://github.com/l337quez/nest-js-mis-notas/blob/main/images/nest-js.png"></p>  
 
  <br/>
@@ -187,12 +188,29 @@ https://www.npmjs.com/package/mongoose-paginate-v2
 ```
 npm i --save redis
 ```
+Instalamos dependencias
 
 ```
 npm i cache-manager cache-manager-redis-store --save
 ```
 
+Creamos un modulo para almacenar en cache
+```
+nest g module redis-cache
+```
+ Creamos un servicio para el almacenamiento del cache
+```
+nest g service redis-cache
+```
 
+mas informacion: https://javascript.plainenglish.io/what-is-redis-and-how-to-use-it-with-nest-js-3cd1de0fe13b
+
+ <br/>
+
+REDIS_HOST : Especifica el host de nuestra base de datos de Redis (por ejemplo: localhost)
+REDIS_PORT : El valor del puerto predeterminado es 6479
+CACHE_TTL : Especifica la cantidad de tiempo en segundos antes de que se invalide un valor
+MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mantener en la caché.
  
  <br/>
  
