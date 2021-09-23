@@ -54,7 +54,7 @@ nest start --watch
 
 
 #### Estructura de carpetas
-Esta es la estructura basica, que uso para un controlador. Por ejemplo el modulo Subjet (materias)
+Esta es la estructura basica, que uso para un controlador. Por ejemplo el entidad Subject (materia), tiene su servicio, modulo, schema, entre otros, tal como se muestra en la imagen
 
 <p align="center"><img src="https://github.com/l337quez/nest-js-mis-notas/blob/main/images/estructura_basica.png"></p>  
 
