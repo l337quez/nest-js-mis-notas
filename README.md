@@ -80,6 +80,7 @@ nest g mo technicians nombre_del_modulo
 
 <a name="item5"></a>
 #### Generar un servicio
+Si vas a generar un servicio dentro de un microservicio, solo escriba el nombre de la carpeta/nombre_del_servicio luego nest te pide que inques a que microservico vas a generar el servicio.
 ```
 nest g service nombre_del_servicio
 ```
