@@ -7,8 +7,15 @@ By: Ronal Forero
  <br/>
 
 todo lo referente a nest js, cada vez que se cree un controlador, lo va crear dentro de la carpeta src, sino le indicas otro directorio. 
-Documentacion Oficial https://docs.nestjs.com/
+Documentacion Oficial https://docs.nestjs.com/  
 
+ <br/>
+ 
+ Vea las nuevas noticias del Framework NestJs
+https://trilon.io/blog/
+
+ <br/>
+ 
 ### Índice 
 * [Obtener ayuda de Nest](#item1)
 * [Crear un Nuevo Proyecto](#item1.1)
