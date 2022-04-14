@@ -70,6 +70,11 @@ Esta es la estructura basica, que uso para un controlador. Por ejemplo el entida
 
 <a name="item3"></a>
 #### Generar un Controlador
+Si queremos que nest te cree un CRUD del controlador, debes tener el siguiente paquete instalado
+```
+nest install @nestjs/schematics --save
+```
+ahora si podremos crear el controlador con el siguiente comando
 ```
 nest g controller nombre_del_servicio
 ```
