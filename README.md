@@ -80,7 +80,7 @@ nest g controller nombre_del_servicio
 #### Generar un modulo
 Un módulo es una clase anotada con un @Module() decorador. El @Module()decorador proporciona metadatos que Nest utiliza para organizar la estructura de la aplicación.
 ```
-nest g mo technicians nombre_del_modulo
+nest g mo nombre_del_modulo
 ```
 
 <br/>
