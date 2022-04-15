@@ -120,6 +120,8 @@ Las funciones de middleware pueden realizar las siguientes tareas:
 * llame a la siguiente función de middleware en la pila.
   si la función de middleware actual no finaliza el ciclo de solicitud-respuesta, debe llamar next()para pasar el control a la siguiente función de    middleware. De lo contrario, la solicitud quedará pendiente.  
 
+**Nota:** un middlware no funciona en microservicios, ya que el moddleware funciona solo en http, y los microservicios usan trasnport que no son http
+
 <br/>
 
 Podemos usar el middleware con una ruta con una ruta, tambien con una ruta y un metodo en especifico. Tambien podemos excluir rutas
