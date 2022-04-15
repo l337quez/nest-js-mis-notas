@@ -111,13 +111,40 @@ nest g service nombre_del_servicio --no-spec
 
 <a name="middleware_express"></a>
 #### Crear un Middleware con Express
+Ejemplo vamos a crear un archivo logger.middleware.ts 
 
+```js
+import { Injectable, NestMiddleware } from '@nestjs/common';
+import { Request, Response, NextFunction } from 'express';
+
+@Injectable()
+export class LoggerMiddleware implements NestMiddleware {
+  use(req: Request, res: Response, next: NextFunction) {
+    console.log('Request...');
+    next();
+  }
+}
+```
 
 <br/>
 
 <a name="middleware_fastify"></a>
 #### Crear un Middleware con Fastify
+Ejemplo vamos a crear un archivo app.middleware.ts
 
+```js
+import { Injectable, NestMiddleware } from '@nestjs/common';
+import { ServerResponse, IncomingMessage } from 'http';
+
+@Injectable()
+export class AppMiddleware implements NestMiddleware {
+  use(req: IncomingMessage, res: ServerResponse, next: Function) {
+    res.writeHead(200, { 'content-type': 'application/json' })
+    res.write(JSON.stringify({ test: "test" }))
+    res.end()
+  }
+}
+```
 
 <br/>
 
