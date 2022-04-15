@@ -23,6 +23,7 @@ https://trilon.io/blog/
 * [Generar un Controlador](#item3)
 * [Generar un modulo](#item4)
 * [Generar un servicio](#item5)
+* [Crear un Middleware](#middleware)
 * [Crear un Middleware con Express](#middleware_express)
 * [Crear un Middleware con Fastify](#middleware_fastify)
 * [Interfaces](#item6)
@@ -108,6 +109,18 @@ nest g service nombre_del_servicio --no-spec
 <br/>
 <br/>
 
+<a name="middleware"></a>
+####  Middleware 
+
+    Las funciones de middleware pueden realizar las siguientes tareas:
+
+* ejecutar cualquier código.
+* realizar cambios en la solicitud y los objetos de respuesta.
+* terminar el ciclo de solicitud-respuesta.
+* llame a la siguiente función de middleware en la pila.
+  si la función de middleware actual no finaliza el ciclo de solicitud-respuesta, debe llamar next()para pasar el control a la siguiente función de    middleware. De lo contrario, la solicitud quedará pendiente.
+
+<br/>
 
 <a name="middleware_express"></a>
 #### Crear un Middleware con Express
