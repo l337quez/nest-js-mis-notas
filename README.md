@@ -23,7 +23,8 @@ https://trilon.io/blog/
 * [Generar un Controlador](#item3)
 * [Generar un modulo](#item4)
 * [Generar un servicio](#item5)
-* [Crear un Middleware](#middleware)
+* [Crear un Middleware con Express](#middleware_express)
+* [Crear un Middleware con Fastify](#middleware_fastify)
 * [Interfaces](#item6)
 * [Schemas](#item7)
 * [Data Object Transfer (DTO)](#item8)
@@ -105,10 +106,17 @@ nest g service nombre_del_servicio --no-spec
 <br/>
 
 <br/>
+<br/>
 
 
-<a name="middleware"></a>
-#### Crear un Middleware
+<a name="middleware_express"></a>
+#### Crear un Middleware con Express
+
+
+<br/>
+
+<a name="middleware_fastify"></a>
+#### Crear un Middleware con Fastify
 
 
 <br/>
