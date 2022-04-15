@@ -111,14 +111,18 @@ nest g service nombre_del_servicio --no-spec
 
 <a name="middleware"></a>
 ####  Middleware 
-
-    Las funciones de middleware pueden realizar las siguientes tareas:
+https://docs.nestjs.com/middleware
+Las funciones de middleware pueden realizar las siguientes tareas:
 
 * ejecutar cualquier código.
 * realizar cambios en la solicitud y los objetos de respuesta.
 * terminar el ciclo de solicitud-respuesta.
 * llame a la siguiente función de middleware en la pila.
-  si la función de middleware actual no finaliza el ciclo de solicitud-respuesta, debe llamar next()para pasar el control a la siguiente función de    middleware. De lo contrario, la solicitud quedará pendiente.
+  si la función de middleware actual no finaliza el ciclo de solicitud-respuesta, debe llamar next()para pasar el control a la siguiente función de    middleware. De lo contrario, la solicitud quedará pendiente.  
+
+<br/>
+
+Podemos usar el middleware con una ruta con una ruta, tambien con una ruta y un metodo en especifico. Tambien podemos excluir rutas
 
 <br/>
 
