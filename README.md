@@ -130,7 +130,7 @@ export class LoggerMiddleware implements NestMiddleware {
 
 <a name="middleware_fastify"></a>
 #### Crear un Middleware con Fastify
-Ejemplo vamos a crear un archivo app.middleware.ts
+Ejemplo vamos a crear un archivo app.middleware.ts, en el caso de Fastify usa codigo vanila de JS
 
 ```js
 import { Injectable, NestMiddleware } from '@nestjs/common';
