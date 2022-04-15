@@ -23,6 +23,7 @@ https://trilon.io/blog/
 * [Generar un Controlador](#item3)
 * [Generar un modulo](#item4)
 * [Generar un servicio](#item5)
+* [Crear un Middleware](#middleware)
 * [Interfaces](#item6)
 * [Schemas](#item7)
 * [Data Object Transfer (DTO)](#item8)
@@ -104,6 +105,14 @@ nest g service nombre_del_servicio --no-spec
 <br/>
 
 <br/>
+
+
+<a name="middleware"></a>
+#### Crear un Middleware
+
+
+<br/>
+
 
 <a name="item6"></a>
 #### Interfaces
