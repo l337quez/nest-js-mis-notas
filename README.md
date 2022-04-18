@@ -34,6 +34,7 @@ https://trilon.io/blog/
 * [Mongoose paginate V2](#Mongoose_paginate)
 * [Trabajando con Redis](#redis)
 * [librerias para Nest](#Libraries)
+* [Fuentes](#Fuentes)
 
  <br/>
 
@@ -295,3 +296,16 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
  hay ciertas librerias que se acoplan perfectamente a Nest, dejare aqui un lista
  
  * Libreria papaparse : ideal para parsear archivos csv a json --> https://www.npmjs.com/package/nest-papaparse
+
+ <br/>
+
+<a name="item1"></a>
+#### Fuentes
+ <br/>
+ **Documentacion de Nest JS**
+ https://docs.nestjs.com/faq
+ 
+  <br/>
+ 
+ **Blog de Brando Juberd**
+ https://blog.devgenius.io/deprecation-warning-with-graphql-nestjs-versionless-api-badcba08cb1f
