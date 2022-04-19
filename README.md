@@ -26,6 +26,7 @@ https://trilon.io/blog/
 * [Crear un Middleware](#middleware)
 * [Crear un Middleware con Express](#middleware_express)
 * [Crear un Middleware con Fastify](#middleware_fastify)
+* [Crear un Middleware con GraphQl](#middleware_graphql)
 * [Interfaces](#item6)
 * [Schemas](#item7)
 * [Data Object Transfer (DTO)](#item8)
@@ -168,7 +169,7 @@ export class AppMiddleware implements NestMiddleware {
 
 <br/>
 
-<a name="middleware_fastify"></a>
+<a name="middleware_graphql"></a>
 #### Crear un Middleware con GraphQl
 
 Este ejemplo funciona tanto en Express como en Fastify. El ejemplo imprime la request y la informacion solicitada con GraphQl
