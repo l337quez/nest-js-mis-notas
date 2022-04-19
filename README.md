@@ -171,8 +171,8 @@ export class AppMiddleware implements NestMiddleware {
 <a name="middleware_fastify"></a>
 #### Crear un Middleware con GraphQl
 
-Este ejemplo funciona tanto en Express como en Fastify
-```
+Este ejemplo funciona tanto en Express como en Fastify. El ejemplo
+```js
 export const checkRole: FieldMiddleware = async (
     ctx: MiddlewareContext,
     next: NextFn,
@@ -182,6 +182,8 @@ export const checkRole: FieldMiddleware = async (
     const value = await next();
     const {context} = ctx;
     const request = context.req
+    console.log("Request",request.user);
+    console.log("informacion que estas consultando",info);
     return value;
   };
 ```
