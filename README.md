@@ -189,7 +189,16 @@ export const checkRole: FieldMiddleware = async (
   };
 ```
 
+<br/>
 
+Dentro del Module agregamos este codigo
+```js
+ imports: [
+ buildSchemaOptions: {
+   fieldMiddleware: [checkRoleMiddleware],
+ }
+ ]
+```
 <br/>
 
 <a name="item6"></a>
