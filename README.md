@@ -172,7 +172,7 @@ export class AppMiddleware implements NestMiddleware {
 <a name="middleware_graphql"></a>
 #### Crear un Middleware con GraphQl
 
-Este ejemplo funciona tanto en Express como en Fastify. El ejemplo imprime la request y la informacion solicitada con GraphQl
+Este ejemplo funciona tanto en Express como en Fastify. El ejemplo imprime la request y la informacion solicitada con GraphQl. Aqui se esta usando fieldMiddleware, esto es ideal para hacer algun tipo de restriction. Por ejemplo la req se va imprimir tantas veces como campos se esten consultando. Lo que realmente hace es que va pasando field por field, si deseas poner una condicion entonces muy facil hacerlo.
 ```js
 export const checkRole: FieldMiddleware = async (
     ctx: MiddlewareContext,
