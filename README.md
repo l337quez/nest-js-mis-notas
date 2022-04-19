@@ -195,7 +195,7 @@ Dentro del Module agregamos este codigo
 ```js
  imports: [
  buildSchemaOptions: {
-   fieldMiddleware: [checkRoleMiddleware],
+   fieldMiddleware: [FieldMiddleware],
  }
  ]
 ```
