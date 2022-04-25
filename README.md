@@ -35,7 +35,7 @@ https://trilon.io/blog/
 * [Mongoose paginate V2](#Mongoose_paginate)
 * [Trabajando con Redis](#redis)
 * [librerias para Nest](#Libraries)
-* Resolviendo Problemas(#resolve_problems)
+* [Resolviendo Problemas](#resolve_problems)
 * [Fuentes](#Fuentes)
 
  <br/>
@@ -340,6 +340,7 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
 
  <br/>
 
+```
  providers: [
     {
       provide: 'USERS',
@@ -352,6 +353,7 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
     },
     ConfigService
   ]
+```
 
  <br/>
  
