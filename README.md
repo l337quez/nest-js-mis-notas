@@ -35,6 +35,7 @@ https://trilon.io/blog/
 * [Mongoose paginate V2](#Mongoose_paginate)
 * [Trabajando con Redis](#redis)
 * [librerias para Nest](#Libraries)
+* Resolviendo Problemas(#resolve_problems)
 * [Fuentes](#Fuentes)
 
  <br/>
@@ -329,7 +330,34 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
  
  * Libreria papaparse : ideal para parsear archivos csv a json --> https://www.npmjs.com/package/nest-papaparse
 
+
  <br/>
+ 
+ <a name="resolve_problems"></a>
+ #### Resolviendo Problemas
+
+* Tuve un probema en Microservicios, TyperORM, graphql. Implemente un guard de permission en la gateway, este guard se comunicaba con el microservicio useer, asi que tuve que agregar en el modulo una inyeccion para que eso estuviese disponible a cualquier cosa en la gateway.
+
+ <br/>
+
+ providers: [
+    {
+      provide: 'USERS',
+      useFactory: ({ user }: ConfigService) => ClientProxyFactory.create(user),
+      inject: [ConfigService],
+    },
+     {
+      provide: APP_GUARD,
+      useClass: PermissionGuard,
+    },
+    ConfigService
+  ]
+
+ <br/>
+ 
+ El problema es que el guard se estaba ejecutando muchas veces y es que el arreglo de provide: APP_GUARD, no se debia poner en todos los modulos donde se debia inyectar, simplemente con ponerlo en un modulo ya se hace global. La solucion fue eliminar eso de todos los modulos.
+ 
+  <br/>
 
 <a name="item1"></a>
 #### Fuentes
