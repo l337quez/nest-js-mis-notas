@@ -34,6 +34,8 @@ https://trilon.io/blog/
 * * [Decoradores para Validaciones](#DecoradoresValidation)
 * [Mongoose paginate V2](#Mongoose_paginate)
 * [Trabajando con Redis](#redis)
+* [Informacion Adicional](#info_adicional)
+* * [Que es una Interface](#interface)
 * [librerias para Nest](#Libraries)
 * [Resolviendo Problemas](#resolve_problems)
 * [Fuentes](#Fuentes)
