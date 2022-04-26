@@ -36,6 +36,10 @@ https://trilon.io/blog/
 * [Trabajando con Redis](#redis)
 * [Informacion Adicional](#info_adicional)
 * * [Que es una Interface](#interface)
+* * [Que es un DTO](#dto)
+* * [Que es una Entity](#entity)
+   <a name="entity"></a>
+ #### Que es una entity
 * [librerias para Nest](#Libraries)
 * [Resolviendo Problemas](#resolve_problems)
 * [Fuentes](#Fuentes)
@@ -325,6 +329,33 @@ CACHE_TTL : Especifica la cantidad de tiempo en segundos antes de que se invalid
 MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mantener en la caché.
  
  <br/>
+  
+ <a name="info_adicional"></a>
+ #### Informacion Adicional
+ 
+ Esta esn una sesion con informacional adicional que todo programador debemos conocer y no esta de mas explicarlo.
+
+  <br/>
+
+
+  <a name="interface"></a>
+ #### Que es una Interface
+ 
+ En español se traduce a interfaz, tecnicamente son un mecanismo de la programacion orientada a objetos (POO) que trata de suplir la carencia
+ de herencia múñtiple.  
+ La diferencia de las clases que extiendes con respecto a las interfaces es que las interfaces no contienen implementación de sus métodos, por lo que la clase que implementa una interfaz debe escribir el código de todos los métodos que contiene. Por este motivo, se dice que las interfaces son como un contrato, en el que se especifica las cosas que debe contener una clase para que pueda implementar una interfaz o cumplir el contrato declarado por esa interfaz.
+ 
+   <br/>
+ 
+   <a name="dto"></a>
+ #### Que es un DTO
+ 
+  <br/>
+ 
+   <a name="entity"></a>
+ #### Que es una entity
+ 
+  <br/>
  
  <a name="Libraries"></a>
  #### Librerias para Nest JS
