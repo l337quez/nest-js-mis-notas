@@ -349,11 +349,14 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
  
    <a name="dto"></a>
  #### Que es un DTO
+El patrón DTO (Data Transfer Object) tiene como finalidad la creación de objetos planos (POJO) con una serie de atributos que puedan ser enviados o recuperados del servidor en una sola invocación, de tal forma que un DTO puede contener información de múltiples fuentes o tablas y concentrarlas en una única clase simple.  
+Esto es ideal para solo enviar lo que se desea y no enviar datos de mas. Por ejemplo En la comunicacion entre microservicios, si deseamos enviar un objecto desde la gateway al microservicios user si en las dos partes el objecto esta definido como un tipo dto, entonces cada campo debe ser del tipo que se declaro en el DTO, esto tambien obliga a no enviar datos de otro tipo. Ejmplo si hay un campo que se declaro como string, debe ser string estrictamente.
  
   <br/>
  
    <a name="entity"></a>
  #### Que es una entity
+  las entidades son clases que representa al modelo de datos, o mapea directamente contra una tabla de la base de datos. Dicho esto, las entidades son clases que fueron diseñadas para mapear contra la base de datos, no para ser una vista para una pantalla o servicio determinado, lo que provoca que muchos de los campos no puedan ser serializables, no contengan todos los campos necesarios un servicio, ya sea que tengan de más o de menos.
  
   <br/>
  
