@@ -38,7 +38,6 @@ https://trilon.io/blog/
 * * [Que es una Interface](#interface)
 * * [Que es un DTO](#dto)
 * * [Que es una Entity](#entity)
-   <a name="entity"></a>
  #### Que es una entity
 * [librerias para Nest](#Libraries)
 * [Resolviendo Problemas](#resolve_problems)
