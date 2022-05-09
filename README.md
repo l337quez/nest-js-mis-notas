@@ -82,6 +82,9 @@ Esta es la estructura basica, que uso para un controlador. Por ejemplo el entida
 
 <a name="gen_all"></a>
 #### Generar todo con un comando
+Generar controlador, servicio, dto y entitie con un solo comando. para rest, graphql...
+
+<br/>
 
 instalar
 ```
