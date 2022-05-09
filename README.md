@@ -92,6 +92,19 @@ nest g controller nombre_del_servicio
 
 <br/>
 
+<a name=""></a>
+#### Generar todo con un comando
+
+instalar
+```
+npm i @nestjs/schematics --save
+```
+```
+nets g resource nombre_del_compunente
+```
+
+<br/>
+
 <a name="item4"></a>
 #### Generar un modulo
 Un módulo es una clase anotada con un @Module() decorador. El @Module()decorador proporciona metadatos que Nest utiliza para organizar la estructura de la aplicación.
