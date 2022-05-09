@@ -20,6 +20,7 @@ https://trilon.io/blog/
 * [Obtener ayuda de Nest](#item1)
 * [Crear un Nuevo Proyecto](#item1.1)
 * [Arrancar proyecto en modo de auto reinicio con algun cambio efectuado](#item2)
+* [Generar todo con un solo comando](#gen_all)
 * [Generar un Controlador](#item3)
 * [Generar un modulo](#item4)
 * [Generar un servicio](#item5)
@@ -79,6 +80,19 @@ Esta es la estructura basica, que uso para un controlador. Por ejemplo el entida
 <br/>
 
 
+<a name="gen_all"></a>
+#### Generar todo con un comando
+
+instalar
+```
+npm i @nestjs/schematics --save
+```
+```
+nets g resource nombre_del_compunente
+```
+
+<br/>
+
 <a name="item3"></a>
 #### Generar un Controlador
 Si queremos que nest te cree un CRUD del controlador, debes tener el siguiente paquete instalado
@@ -92,18 +106,6 @@ nest g controller nombre_del_servicio
 
 <br/>
 
-<a name=""></a>
-#### Generar todo con un comando
-
-instalar
-```
-npm i @nestjs/schematics --save
-```
-```
-nets g resource nombre_del_compunente
-```
-
-<br/>
 
 <a name="item4"></a>
 #### Generar un modulo
