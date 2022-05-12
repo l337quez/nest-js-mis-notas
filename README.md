@@ -28,6 +28,7 @@ https://trilon.io/blog/
 * [Crear un Middleware con Express](#middleware_express)
 * [Crear un Middleware con Fastify](#middleware_fastify)
 * [Crear un Middleware con GraphQl](#middleware_graphql)
+* [Crear Cron Job](#cron_job)
 * [Interfaces](#item6)
 * [Schemas](#item7)
 * [Data Object Transfer (DTO)](#item8)
@@ -223,6 +224,14 @@ Dentro del Module agregamos este codigo
  }
  ]
 ```
+<br/>
+
+
+<a name="cron_job"></a>
+#### Crear Cron Job
+Crear un cron Job es sencillo en Nest. Pero quiero dejar documentado algo que me sucedio. Resulta que el cron job se ejecutaba y no paraba. Por mas que hacia cualquier cambio, eso no cambiaba el comportamiento del cron job. SOlucion: borrar la carpeta dist y volver a levantar el proyecto
+
+
 <br/>
 
 <a name="item6"></a>
