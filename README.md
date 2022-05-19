@@ -56,7 +56,7 @@ nest --help
 
 <br/>
 
-<a name="item1.1"></a>
+<a name="debuger"></a>
 #### Como debugear en VsCode
 Hace un tiempo vscode no craba la carpeta .vscode, pero ahora si lo hace. para el dia de hoy Mayo del 2020 esta tomando la configuracion del archivo launch.json.  Vamos a crear un archivo dentro de la carpeta .vscode  llamado launch.json y dentro del archivo vamos a pegar la siguiente
 configuracion
@@ -81,7 +81,9 @@ configuracion
 }
 ```
 
+Para conocer como usar el debuger ver este video
 
+https://www.youtube.com/watch?v=_3SeqNyPLeM
 
 <br/>
 
