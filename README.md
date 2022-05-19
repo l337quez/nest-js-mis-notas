@@ -19,6 +19,7 @@ https://trilon.io/blog/
 ### Índice 
 * [Obtener ayuda de Nest](#item1)
 * [Crear un Nuevo Proyecto](#item1.1)
+* [Configurar Debuger en VsCode](#debuger)
 * [Arrancar proyecto en modo de auto reinicio con algun cambio efectuado](#item2)
 * [Generar todo con un solo comando](#gen_all)
 * [Generar un Controlador](#item3)
@@ -52,6 +53,35 @@ https://trilon.io/blog/
 ```
 nest --help
 ```
+
+<br/>
+
+<a name="item1.1"></a>
+#### Como debugear en VsCode
+Hace un tiempo vscode no craba la carpeta .vscode, pero ahora si lo hace. para el dia de hoy Mayo del 2020 esta tomando la configuracion del archivo launch.json.  Vamos a crear un archivo dentro de la carpeta .vscode  llamado launch.json y dentro del archivo vamos a pegar la siguiente
+configuracion
+
+```
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug Nest Framework",
+        "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+        "args": ["${workspaceFolder}/src/main.ts"],
+        "autoAttachChildProcesses": true
+      }
+    ]
+}
+```
+
+
 
 <br/>
 
