@@ -21,6 +21,7 @@ https://trilon.io/blog/
 * [Crear un Nuevo Proyecto](#item1.1)
 * [Configurar Debuger en VsCode](#debuger)
 * [Arrancar proyecto en modo de auto reinicio con algun cambio efectuado](#item2)
+* [Crear un monorepo](#monorepo)
 * [Generar todo con un solo comando](#gen_all)
 * [Generar un Controlador](#item3)
 * [Generar un modulo](#item4)
@@ -109,6 +110,28 @@ nest start --watch
 Esta es la estructura basica, que uso para un controlador. Por ejemplo el entidad Subject (materia), tiene su servicio, modulo, schema, entre otros, tal como se muestra en la imagen
 
 <p align="center"><img src="https://github.com/l337quez/nest-js-mis-notas/blob/main/images/estructura_basica.png"></p>  
+
+<br/>
+
+
+<br/>
+
+
+<a name="monorepo"></a>
+#### Crear un monorepo
+monorepo es una estrategia de desarrollo de software donde el código de muchos proyectos se almacena en el mismo repositorio.
+```
+nest new my-project
+```
+Esto va crear un proyecto normal, ahora entramos en la carpeta del proyecto y convertimos el proyecto en monorepo
+```
+cd my-project
+```
+vamos a convertir el proyecto en monorepo y ya luego podemos crear una aplicacion dentro del proyecto
+
+```
+nest g app otra-aplication
+```
 
 <br/>
 
