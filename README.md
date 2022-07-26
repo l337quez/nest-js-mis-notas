@@ -46,6 +46,9 @@ https://trilon.io/blog/
 * [librerias para Nest](#Libraries)
 * [Resolviendo Problemas](#resolve_problems)
 * [Fuentes](#Fuentes)
+* [Como usar Axios](#Axios)
+* * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#entity)
+* [Extenciones que uso en VsCode](#vscode-extencions)
 
  <br/>
 
@@ -418,6 +421,16 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
 
   <br/>
 
+
+  <a name="vscode-extencions"></a>
+ #### Extenciones que uso en VsCode
+
+**Paste JSON as Code**  :  Extension de quicktype, excelente extencion que nos ayuda a crear una interfaz de un JSON. Es decir crea tantas interfaces necearias como tipos de datos tenga el JSON.
+
+Para usarla debemos tener el JSON en el porta papeles, osea debemos hacer copiado el json, luego hacemo control +p  y buscamos la extencion y ya nos genera la interfaz
+
+
+  <br/>
 
   <a name="interface"></a>
  #### Que es una Interface
