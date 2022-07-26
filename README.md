@@ -429,6 +429,26 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
 
 Para usarla debemos tener el JSON en el porta papeles, osea debemos hacer copiado el json, luego hacemo control +p  y buscamos la extencion y ya nos genera la interfaz
 
+  <br/>
+  
+**Windows Colors**  : Extension de Stuart Robinson, es ideal para cuando abres mas de un proyecto en Vscode y quieres distinguir entre una ventan que pertenece a un proyecto con otra ventana que pertenece a otro proyecto, esta extencion le pone un color en la franja del menu ixquierdo y eso nos ayudara a tener una referencia.
+
+
+  <br/>
+  
+**GitLens**  : Extension de GitKraken, es una extencion que esta vinculada con git, contiene muchas opciones, pero entre la mas resaltantes para mi. Es que si estas trabajando en un proyecto grupal, mostrara el usuario que hizo el commit en cada linea del codigo.  
+
+  <br/>
+  
+**Prettier**  : Extension de Prettier, es una extencion que nos ayudara a formatear el codigo para que sea mas legible, debemos hacerle algunas configuraciones...  
+
+  <br/>
+  
+**Better Comments**  : Extension de Aaron Bond. Hay una practia que he tomado y es que cuando me hace falta agregar cierta funcionalidad o en otras palabras tengo algo pendiente por hacer, hago un comentario y escribo "// TODO "  asi en mayuscula. En otros IDE's como Android studio, este comentario lo resalta. bueno para hacer algo parecido en vscode... esta extencion nos ayudara ha resaltar todos los comentarios con la palabra TODO.
+
+  <br/>
+  
+**Excel Viewer**  : Extension de GrapeCity, es una extencion que nos ayudara a previsualizar archivos excell dentro vscode, algo parecido con los archivos smarkdownk, que vscode nos ayuda a previsualizar. Muy util para cuando trabajamos con Data y para no abrir un editor de Excell.
 
   <br/>
 
