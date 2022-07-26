@@ -43,7 +43,7 @@ https://trilon.io/blog/
 * * [Que es un DTO](#dto)
 * * [Que es una Entity](#entity)
 * [Como usar Axios](#Axios)
-* * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#entity)
+* * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#interfaz-extencion)
 
  #### Que es una entity
 * [librerias para Nest](#Libraries)
@@ -436,6 +436,14 @@ const response= await lastValueFrom(this.httpService.get('https://hn.algolia.com
 ``` 
  
    <br/>
+   
+   
+  <a name="interfaz-extencion"></a>
+ #### Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil
+
+Debemos crear un archivo donde vamos agregar las interfaces (es opcional). Luego estando en archivo donde vamos agregar las interfaces, vamos a copiar el Json, luego tecleamos ctrl + p, visualcode mostrara un modal con un imput donde escribiremos el nombre de la extencion paste JSON as code, la extencion nos pedira el nombre de nivel superior, escribimos un nombre alucivo al JSON y ya. la extencion hara todo el trabajo.
+   
+   
 
   <a name="vscode-extencions"></a>
  #### Extenciones que uso en VsCode
