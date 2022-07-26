@@ -421,6 +421,20 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
 
   <br/>
 
+  <a name="Axios"></a>
+ #### Como usar Axios
+ 
+ Axios es un Cliente HTTP basado en promesas para node. js y el navegador. Es isomorfico (= puede ejecutarse en el navegador y nodejs con el mismo código base). En el lado del servidor usa el modulo nativo http de node. A modo de ejemplo usaremos la siguiente url: https://hn.algolia.com/api/v1/search_by_date?query=nodejs
+ 
+ Otra cosa importante es que debemos importar el modulo de HttpModule, en el modulo donde vamos a trabajar con Axios
+ 
+ ```js
+import { HttpService } from '@nestjs/axios';
+
+const response= await lastValueFrom(this.httpService.get('https://hn.algolia.com/api/v1/search_by_date?query=nodejs'))
+``` 
+ 
+   <br/>
 
   <a name="vscode-extencions"></a>
  #### Extenciones que uso en VsCode
