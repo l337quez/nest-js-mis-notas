@@ -42,12 +42,13 @@ https://trilon.io/blog/
 * * [Que es una Interface](#interface)
 * * [Que es un DTO](#dto)
 * * [Que es una Entity](#entity)
+* [Como usar Axios](#Axios)
+* * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#entity)
+
  #### Que es una entity
 * [librerias para Nest](#Libraries)
 * [Resolviendo Problemas](#resolve_problems)
 * [Fuentes](#Fuentes)
-* [Como usar Axios](#Axios)
-* * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#entity)
 * [Extenciones que uso en VsCode](#vscode-extencions)
 
  <br/>
