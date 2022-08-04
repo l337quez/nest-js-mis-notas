@@ -548,13 +548,21 @@ Excelente tutorial:
 https://ualmtorres.github.io/SeminarioTesting/  
  
   
-Para ejecutar unicamente los test typeamos el siguiente comando
+Para ejecutar unicamente los test typeamos el siguiente comando. Pero este comando ejecutara todos los test de una vez
 ```
 npm run test:watch
 ```
 
   <br/>
+  
+Ejecutar un test en especifico. Por ejemplo el test del controlador de componente User  
+```
+npm run test -f user.controller.spec.ts :watch
+```
 
+  <br/>
+  
+    <br/>
 
 <a name="item1"></a>
 #### Fuentes
