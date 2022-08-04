@@ -45,7 +45,7 @@ https://trilon.io/blog/
 * [Como usar Axios](#Axios)
 * * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#interfaz-extencion)
 
- #### Que es una entity
+#### Que es una entity
 * [librerias para Nest](#Libraries)
 * [Resolviendo Problemas](#resolve_problems)
 * [Fuentes](#Fuentes)
@@ -54,7 +54,7 @@ https://trilon.io/blog/
  <br/>
  
  
-  #### Testing
+#### Testing
 * [Pruebas en Nest](#testing)
 
  <br/>
