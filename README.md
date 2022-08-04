@@ -542,8 +542,15 @@ Esto es ideal para solo enviar lo que se desea y no enviar datos de mas. Por eje
 
 <a name="Testing"></a>
 #### Pruebas en Nest
+Excelente tutorial:  https://ualmtorres.github.io/SeminarioTesting/  
 
- https://ualmtorres.github.io/SeminarioTesting/
+  <br/>
+  
+  
+Para ejecutar unicamente los test typeamos el siguiente comando
+```
+npm run test:watch
+```
 
   <br/>
 
