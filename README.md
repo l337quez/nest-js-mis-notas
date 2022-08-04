@@ -55,7 +55,7 @@ https://trilon.io/blog/
  
  
 #### Testing
-* [Pruebas en Nest](#testing)
+* [Pruebas en Nest](#testing-nest)
 
  <br/>
  
@@ -541,7 +541,7 @@ Esto es ideal para solo enviar lo que se desea y no enviar datos de mas. Por eje
   <br/>
 
 
-<a name="testing"></a>
+<a name="testing-nest"></a>
 #### Pruebas en Nest
 
 Excelente tutorial:  
