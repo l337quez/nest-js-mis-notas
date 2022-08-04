@@ -556,13 +556,14 @@ npm run test:watch
   <br/>
   
 Ejecutar un test en especifico. Por ejemplo el test del controlador de componente User  
+
 ```
 npm run test -f user.controller.spec.ts :watch
 ```
 
   <br/>
   
-    <br/>
+   
 
 <a name="item1"></a>
 #### Fuentes
