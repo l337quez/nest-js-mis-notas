@@ -56,7 +56,7 @@ https://trilon.io/blog/
  
   #### Testing
 * [Pruebas en Nest](#Testing)
- https://ualmtorres.github.io/SeminarioTesting/
+
 
 <a name="item1"></a>
 #### Obtener ayuda de Nest
