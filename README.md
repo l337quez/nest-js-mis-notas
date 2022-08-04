@@ -52,6 +52,11 @@ https://trilon.io/blog/
 * [Extenciones que uso en VsCode](#vscode-extencions)
 
  <br/>
+ 
+ 
+  #### Testing
+* [Pruebas en Nest](#Testing)
+ https://ualmtorres.github.io/SeminarioTesting/
 
 <a name="item1"></a>
 #### Obtener ayuda de Nest
@@ -533,6 +538,15 @@ Esto es ideal para solo enviar lo que se desea y no enviar datos de mas. Por eje
  El problema es que el guard se estaba ejecutando muchas veces y es que el arreglo de provide: APP_GUARD, no se debia poner en todos los modulos donde se debia inyectar, simplemente con ponerlo en un modulo ya se hace global. La solucion fue eliminar eso de todos los modulos.
  
   <br/>
+
+
+<a name="Testing"></a>
+#### Pruebas en Nest
+
+ https://ualmtorres.github.io/SeminarioTesting/
+
+  <br/>
+
 
 <a name="item1"></a>
 #### Fuentes
