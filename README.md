@@ -157,6 +157,16 @@ Ahora nos vamos al archivo nest-cli.json y vamos a colocar como root al gateway
   "root": "apps/gateway",
 ```
 
+Al estar la gateway como root, podremos correla gateway sin escribir su nombre "gateway". Ejemplo
+```
+nest start --watch
+```
+
+Pero si por ejemplo tenemos el microservicio user entonces lo debemos correr asi
+```
+nest start user --watch
+```
+
 <br/>
 
 
