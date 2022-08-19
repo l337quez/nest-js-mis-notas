@@ -145,6 +145,20 @@ nest g app otra-aplication
 
 <br/>
 
+Como podemos crear una Gateway. La Gateway es la que podra Orquestar todos los micorservicios, para mas explicaion al respecto en la pagina oficial de Nest explican. La gateway es otro microservicio mas, es decir podremos ponerle cualquier nombre. Vamos a llamarle gateway
+
+```
+nest g app gateway
+```
+
+Ahora nos vamos al archivo nest-cli.json y vamos a colocar como root al gateway
+```
+  "monorepo": true,
+  "root": "apps/gateway",
+```
+
+<br/>
+
 
 <a name="gen_all"></a>
 #### Generar todo con un comando
