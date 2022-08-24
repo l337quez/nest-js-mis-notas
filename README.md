@@ -37,6 +37,7 @@ https://trilon.io/blog/
 * [Decoradores](#Decoradores)
 * * [Decoradores para Validaciones](#DecoradoresValidation)
 * [Mongoose paginate V2](#Mongoose_paginate)
+* [GraphQl](#graphql)
 * [Trabajando con Redis](#redis)
 * [Informacion Adicional](#info_adicional)
 * * [Que es una Interface](#interface)
@@ -450,6 +451,23 @@ MAX_ITEM_IN_CACHE : Especifica el número máximo de elementos que se deben mant
  
  Esta esn una sesion con informacional adicional que todo programador debemos conocer y no esta de mas explicarlo.
 
+  <br/>
+
+  <a name="graphql"></a>
+ #### GraphQl
+
+GraphQL es un lenguaje de consulta y manipulación de datos para APIs, y un entorno de ejecución para realizar consultas con datos existentes.​ GraphQL fue desarrollado internamente por Facebook en 2012 antes de ser liberado públicamente en 2015.
+
+  <br/>
+
+ #### GraphQL (code first) 
+ 
+   <br/>
+ 
+ #### GraphQL (schema first) 
+ 
+ https://blog.logrocket.com/code-first-vs-schema-first-development-graphql/
+ 
   <br/>
 
   <a name="Axios"></a>
