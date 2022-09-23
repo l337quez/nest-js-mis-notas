@@ -46,6 +46,14 @@ https://trilon.io/blog/
 * [Como usar Axios](#Axios)
 * * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#interfaz-extencion)
 
+ <br/>
+
+#### TypeOrm
+* [Conexion de TypeOrm](#conexion_typeorm)
+* * [Cargar las Entidades desde un path](#typeorm_path)
+
+ <br/>
+
 #### Que es una entity
 * [librerias para Nest](#Libraries)
 * [Resolviendo Problemas](#resolve_problems)
@@ -544,6 +552,23 @@ Esto es ideal para solo enviar lo que se desea y no enviar datos de mas. Por eje
   las entidades son clases que representa al modelo de datos, o mapea directamente contra una tabla de la base de datos. Dicho esto, las entidades son clases que fueron diseñadas para mapear contra la base de datos, no para ser una vista para una pantalla o servicio determinado, lo que provoca que muchos de los campos no puedan ser serializables, no contengan todos los campos necesarios un servicio, ya sea que tengan de más o de menos.
  
   <br/>
+ 
+
+  ### Conexion TypeOrm
+    <a name="typeorm_path"></a>
+  #### Cargar las Entidades desde un path
+  
+  Para poder usar el path debemos tener disponibles las entidades en cada modulo. Si vamos a trabajar con relaciones que implican dos o mas entidades deben estar disponibles en el modulo. Si se estamos trabajando con el patron repository entonces deben estar los repository que se relacionan con cada entidad. Si hay una relacion usuario y transacion, entonces estas deben estar el forFeature disponibles.
+
+  imports: [
+    TypeOrmModule.forFeature([])
+    ],
+  
+  entities: [__dirname + '/../**/*.entity{.ts,.js}']
+  
+   <br/>
+ 
+ 
  
  <a name="Libraries"></a>
  #### Librerias para Nest JS
