@@ -234,8 +234,39 @@ nest g service nombre_del_servicio --no-spec
 
 <a name="env"></a>
 #### Variables de Entorno
+ Debemos instalar el paquete que indican en la documentacion oficial, crear la carpeta config, crear el archivo .env, ya podremos usar el .env. Para base de datos TypeOrm hay que hacer un procedimiento...
+ 
+ <br/>
 
+**Multiples Ambientes**
+Para tener multiples Ambientes debemos hacer uso de NODE_ENV, esto una variable de entorno propia de NodeJS y del framework Express que se encuentra preseteada en tu aplicación. y tambien vamos a crear un archivo en el folder config
 
+```bash
+# env.config.ts name file
+export const enviroments = {
+    dev: '.env',
+    test: '.test.env',
+    prod: '.prod.env',
+  };
+```
+Vamos a crear tres archivos .env porque solo vamos a usar 3 ambientes..
+Importante debemos importar debtro de los imports el ConfigModule y que este al preincipio de todas las imprtaciones.
+```bash
+# module principal de la app o del microservicio
+   ConfigModule.forRoot(
+     {envFilePath:  enviroments[process.env.NODE_ENV] || '.env'},
+   ),
+```
+
+<br/>
+
+El truco esta en correr la aplicacion, debemos usar otro comando, para que tome el .env dependiendo del ambiente, eso lo vamos a configurar en el package.json
+```bash
+# dentro del objecto "scrips" agregamos las siguientes lineas
+  "start:local": "NODE_ENV=local npm run start",
+  "start:local": "NODE_ENV=local npm run start",
+  "start:local": "NODE_ENV=local npm run start",
+```
 
 
 
