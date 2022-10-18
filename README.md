@@ -249,8 +249,26 @@ export const enviroments = {
     prod: '.prod.env',
   };
 ```
+En el archivo .env debe estar la variable NODE_ENV ejemplo
+```bash
+# .prod.env  name file
+
+NODE_ENV=test
+# GENERAL
+HOST=localhost
+# DB
+DB_HOST=
+DB_PORT=
+DB_NAME=
+DB_USERNAME=
+DB_PASSWORD=
+DATABASE_URL=
+```
+
+<br/>
+
 Vamos a crear tres archivos .env porque solo vamos a usar 3 ambientes..
-Importante debemos importar debtro de los imports el ConfigModule y que este al preincipio de todas las imprtaciones.
+Importante debemos importar debtro de los imports el ConfigModule y que este al preincipio de todas las imprtaciones. Esto quiere decir que va buscar en el archivo que tenga el valor del NODE_ENV que le indiquen y que si no se encuentra entonces tome las variables del archiv .env, el valor de esta variable NODE_ENV se envia con el comando de ejecucion
 ```bash
 # module principal de la app o del microservicio
    ConfigModule.forRoot(
@@ -263,13 +281,19 @@ Importante debemos importar debtro de los imports el ConfigModule y que este al 
 El truco esta en correr la aplicacion, debemos usar otro comando, para que tome el .env dependiendo del ambiente, eso lo vamos a configurar en el package.json
 ```bash
 # dentro del objecto "scrips" agregamos las siguientes lineas
-  "start:local": "NODE_ENV=local npm run start",
-  "start:local": "NODE_ENV=local npm run start",
-  "start:local": "NODE_ENV=local npm run start",
+    "start:prod": "NODE_ENV=prod nest start",
+    "start:test": "NODE_ENV=test nest start",
+    "start:local": "NODE_ENV=local nest start",
 ```
 
+Ejemplo: como correr el ambiente en un microservicio para ejecutra ambiente de desarrollo del microservicio base
+```bash
+NODE_ENV=test npm run start:dev base --watch
+```
 
-
+```bash
+npm run start:test base
+```
 
 <br/>
 <br/>
