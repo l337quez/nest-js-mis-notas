@@ -683,6 +683,14 @@ Las tuberías tienen dos casos de uso típicos:
 * transformación : transforma los datos de entrada a la forma deseada (por ejemplo, de cadena a entero)
 * validación : evalúe los datos de entrada y, si son válidos, simplemente páselos sin cambios; de lo contrario, lanza una excepción cuando los datos son incorrectos
 
+  <br/>
+
+Existen los class validators, que nos ayudan a obligar que el dato sea el que deseamos, es decir que si llega otro tipo de dato se genere una exepcion. Podemos instalar la libreria de class validators, pero esta no va funcionar. 
+```bash
+```
+
+  <br/>
+
 <a name="testing-nest"></a>
 #### Pruebas en Nest
 
