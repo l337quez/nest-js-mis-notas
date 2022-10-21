@@ -62,7 +62,8 @@ https://trilon.io/blog/
 * [Extenciones que uso en VsCode](#vscode-extencions)
 
  <br/>
-#### Que es un Pipe
+ 
+#### Que es un Pipe 
 * [class validators](#pipe)
  
  <br/>
