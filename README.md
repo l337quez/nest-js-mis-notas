@@ -687,7 +687,10 @@ Las tuberías tienen dos casos de uso típicos:
 
 Existen los class validators, que nos ayudan a obligar que el dato sea el que deseamos, es decir que si llega otro tipo de dato se genere una exepcion. Podemos instalar la libreria de class validators, pero esta no va funcionar. 
 ```bash
+$ npm i --save class-validator class-transformer
 ```
+
+**Las tuberías globales se utilizan en toda la aplicación, para cada controlador y cada controlador de ruta.**
 
   <br/>
 
