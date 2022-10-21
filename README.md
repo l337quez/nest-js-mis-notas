@@ -62,7 +62,10 @@ https://trilon.io/blog/
 * [Extenciones que uso en VsCode](#vscode-extencions)
 
  <br/>
+#### Que es un Pipe
+* [class validators](#pipe)
  
+ <br/>
  
 #### Testing
 * [Pruebas en Nest](#testing-nest)
@@ -671,6 +674,13 @@ Esto es ideal para solo enviar lo que se desea y no enviar datos de mas. Por eje
  
   <br/>
 
+
+<a name="pipe"></a>
+#### Pipes
+Las tuberías tienen dos casos de uso típicos:
+
+* transformación : transforma los datos de entrada a la forma deseada (por ejemplo, de cadena a entero)
+* validación : evalúe los datos de entrada y, si son válidos, simplemente páselos sin cambios; de lo contrario, lanza una excepción cuando los datos son incorrectos
 
 <a name="testing-nest"></a>
 #### Pruebas en Nest
