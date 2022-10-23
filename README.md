@@ -65,7 +65,7 @@ https://trilon.io/blog/
  
 #### Que es un Pipe 
 * [class validators](#pipe)
- 
+* [Pipes en Microservicios](#pipe_ms)
  <br/>
  
 #### Testing
@@ -692,6 +692,33 @@ $ npm i --save class-validator class-transformer
 
 **Las tuberías globales se utilizan en toda la aplicación, para cada controlador y cada controlador de ruta.**
 
+  <br/>
+
+<a name="pipe_ms"></a>
+#### Pipes en Microservicios
+
+EN microservicios se usa el @Payload y si usamos class validator para los DTO, es importante  aseguranos que la data que llega al controlador (en el caso de que se use  una Gateway o sino al servicio)  sea de tipo DTO y que el DTO contenga los decoradores. Para implementar los pipes de forma global, vamos al main del microservicio y agregamos el siguiente codigo. Cabe destacar que es de esta forma porque la respuesta lega al gateway donde esta implementado graphql
+```bash
+    app.useGlobalPipes(
+      new ValidationPipe({
+        transform: true,
+        transformOptions:{
+          enableImplicitConversion: true
+        },
+        exceptionFactory: (errors) => {
+          const errorMessages = {};
+          errors.forEach(error => {
+            errorMessages[error.property]= Object.values(error.constraints).join('. ').trim();
+          })
+          const error = Object.values(errorMessages)[0];
+          return new RpcException(error.toString());
+        }
+      })
+    )
+```  
+
+
+  
   <br/>
 
 <a name="testing-nest"></a>
