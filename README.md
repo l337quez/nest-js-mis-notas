@@ -16,6 +16,39 @@ https://trilon.io/blog/
 
  <br/>
  
+ A) Lifecycle Event
+Use a Lifecycle Event (similar to change detection hooks in Angular) to run code and inject the services needed for it, e.g.:
+
+Service
+export class AppService implements OnModuleInit {
+  onModuleInit() {
+    console.log(`Initialization...`);
+    this.doStuff();
+  }
+}
+Module
+export class ApplicationModule implements OnModuleInit {
+  
+  constructor(private appService: AppService) {
+  }
+
+  onModuleInit() {
+    console.log(`Initialization...`);
+    this.appService.doStuff();
+  }
+}
+  
+B) Execution Context
+Use the Execution Context to access any service in your main.ts:
+
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+  await app.listen(3000);
+  const appService = app.get(AppService);
+}
+ 
+  <br/>
+ 
 ### Índice 
 * [Obtener ayuda de Nest](#item1)
 * [Crear un Nuevo Proyecto](#item1.1)
