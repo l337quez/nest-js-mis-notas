@@ -15,10 +15,11 @@ Documentacion Oficial https://docs.nestjs.com/
 https://trilon.io/blog/
 
  <br/>
- 
+ #### llamar a un servicion en el tiempo de ejecucion
  A) Lifecycle Event
 Use a Lifecycle Event (similar to change detection hooks in Angular) to run code and inject the services needed for it, e.g.:
 
+```bash
 Service
 export class AppService implements OnModuleInit {
   onModuleInit() {
@@ -37,16 +38,20 @@ export class ApplicationModule implements OnModuleInit {
     this.appService.doStuff();
   }
 }
+```
+
+  <br/>
   
 B) Execution Context
 Use the Execution Context to access any service in your main.ts:
-
+```bash
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   await app.listen(3000);
   const appService = app.get(AppService);
 }
- 
+``` 
+
   <br/>
  
 ### Índice 
