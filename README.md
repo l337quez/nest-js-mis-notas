@@ -16,7 +16,7 @@ https://trilon.io/blog/
 
  <br/>
  
- #### llamar a un servicion en el tiempo de ejecucion  
+ #### llamar a un servicio en el tiempo de ejecucion  
  
  A) Lifecycle Event
 Use a Lifecycle Event (similar to change detection hooks in Angular) to run code and inject the services needed for it, e.g.:
@@ -86,6 +86,7 @@ async function bootstrap() {
 * * [Que es una Entity](#entity)
 * [Como usar Axios](#Axios)
 * * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#interfaz-extencion)
+* * [Implementar loggin con wiston](#wiston)
 
  <br/>
 
@@ -784,6 +785,13 @@ npm run test -f user.controller.spec.ts :watch
   <br/>
   
    
+<a name="wiston"></a>
+#### Loggin con Wiston
+Wiston nos permite guardar los logs en archivos, esto es mu importante para una aplicacion. El poder hacer seguimiento de las cosas que pasan desde un log, Los logs son como otra base de datos, donde podemos ver que es lo que esta pasando en el produccion.
+https://github.com/gremo/nest-winston
+
+
+  <br/>
 
 <a name="item1"></a>
 #### Fuentes
