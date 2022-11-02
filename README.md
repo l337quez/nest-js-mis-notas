@@ -86,7 +86,7 @@ async function bootstrap() {
 * * [Que es una Entity](#entity)
 * [Como usar Axios](#Axios)
 * * [Crear varias Interfaz de un JSON con diferentes tipos de dato de forma Facil](#interfaz-extencion)
-* [Implementar loggin con wiston](#wiston)
+* [Implementar loggin con winston](#wiston)
 
  <br/>
 
