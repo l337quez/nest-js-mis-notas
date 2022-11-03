@@ -1,0 +1,21 @@
+// Si queremos agregar una variable en los headers y estamos usando graphql. En este caso como ejemplo, estamo seteando los headers en un interceptor. Poner un middleware en graphql es 
+// algo problematico, ya que grapqhl de por si es un middlewre, entonces habran problemas de ejecucion y ademas si abrimos el sandbox el middleware ejecuta solo constantemente
+// por tal motivo decidi hacer un intrceptor, apra probar use el decorador interceptor para un ruta, pero lo ideal es ponerlo global,
+// si estamos trabajando con microservicios, esto hay que agregarlo en el gateway
+
+@Injectable()
+export class HeaderInterceptor implements NestInterceptor {
+  intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
+  
+  // Context GraphQl
+    const ctx = GqlExecutionContext.create(context);
+    
+  const response = ctx.getContext().res
+    if ((context.getType() as string) === 'graphql'){
+      // SET HEADERS
+      response.header(CORRELATION_ID_HEADER, id)
+    }
+  
+   return next.handle();
+  
+  }}
