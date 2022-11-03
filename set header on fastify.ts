@@ -31,6 +31,11 @@ import { FastifyReply, FastifyRequest } from 'fastify';
 
 
 
+      /* const req = ctx.getRequest<FastifyRequest>();
+      const res = ctx.getResponse<FastifyReply<ServerResponse>>();
+      const res = context.switchToHttp().getResponse<FastifyReply<any>>(); */
+
+
 //https://progressivecoder.com/nestjs-interceptors-and-how-to-use-them-learn-nestjs-series-part-8/
 
 //https://stackoverflow.com/questions/61796828/fastify-nestjs-how-to-set-response-headers-in-interceptor
