@@ -55,6 +55,16 @@ async function bootstrap() {
 ``` 
 
   <br/>
+
+MICROSERVICIOS
+
+METODO SEND
+METODO EMIT
+
+Para enviar un evento (en lugar de enviar un mensaje), use el método emit()
+
+
+  <br/>
  
 ### Índice 
 * [Obtener ayuda de Nest](#item1)
