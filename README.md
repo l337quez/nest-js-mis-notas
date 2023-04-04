@@ -77,6 +77,7 @@ Para enviar un evento (en lugar de enviar un mensaje), use el método emit()
 * [Generar un modulo](#item4)
 * [Generar un servicio](#item5)
 * [Variables de Entorno](#env)
+* [Autenticacion](#auth)
 * [Crear un Middleware](#middleware)
 * [Crear un Middleware con Express](#middleware_express)
 * [Crear un Middleware con Fastify](#middleware_fastify)
@@ -352,6 +353,19 @@ npm run start:test base
 
 <br/>
 <br/>
+
+* [Autenticacion](#auth)
+<a name="#auth"></a>
+#### Autenticacion
+
+Errores:
+Existen muchos tutoriales para la Autenticacion y realmente  Nestjs lo hace muy sencillo, recuerdo que en una oportunidad
+no me funcionaba la autenticcion, me salia no authorizado y el problema era que estaba encriptando con una clave y decencriptando con otra clave
+
+
+<br/>
+<br/>
+
 
 <a name="middleware"></a>
 ####  Middleware 
