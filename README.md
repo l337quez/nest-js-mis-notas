@@ -55,13 +55,15 @@ async function bootstrap() {
 ``` 
 
   <br/>
+Configurar Nestjs con Nodemailer
 
-MICROSERVICIOS
+una de las cosas importantes es configurar el template para que siempre este disponible en la carpeta dist, para eso debemo editar el archivo nest-cli.json
+y agregar lo siguiente:
 
-METODO SEND
-METODO EMIT
-
-Para enviar un evento (en lugar de enviar un mensaje), use el método emit()
+  "compilerOptions":{
+    "assets": ["mail/templates/*"]
+  }
+  eso quiere decir que los templates estan en esa carpeta
 
 
   <br/>
