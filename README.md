@@ -65,6 +65,17 @@ y agregar lo siguiente:
   }
   eso quiere decir que los templates estan en esa carpeta
 
+Lo que esta pasando es que no se va guardar los template destro de la carpeta src, sino que guardaran afuera, asi hay que manejar esa ruta, para resolver ese problema
+hacermos uso del path.resolve. En el module el template se deberia configurar como
+
+        template: {
+          dir:  path.resolve(__dirname, '../../mail/templates'),
+          adapter: new HandlebarsAdapter(),
+          options: {
+            strict: true,
+          },
+        },
+        
 
   <br/>
  
